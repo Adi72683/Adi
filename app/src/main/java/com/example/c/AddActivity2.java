@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -20,6 +21,7 @@ public class AddActivity2 extends AppCompatActivity {
     Button add;
     int num1,num2,sum;
     String getNum1,getNum2,res;
+    TextView tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +31,7 @@ public class AddActivity2 extends AppCompatActivity {
         et1 = findViewById(R.id.et1);
         et2 = findViewById(R.id.et2);
         add = findViewById(R.id.addbut);
-
+        tv= findViewById(R.id.resToDisp);
         add=(Button) findViewById(R.id.addbut);
 
         add.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +44,7 @@ public class AddActivity2 extends AppCompatActivity {
                 num2=Integer.parseInt(getNum2);
                         sum=num1+num2;
                 res=String.valueOf(sum);
+                tv.setText(res);
                 Toast.makeText(getApplicationContext(),res, Toast.LENGTH_LONG).show();
 
             }

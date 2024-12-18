@@ -29,5 +29,11 @@
         android:layout_height="wrap_content"
         android:text="Add"
         android:id="@+id/addbut"/>
+    <TextView
+        android:text="0"
+        android:id="@+id/resToDisp"
+        android:textSize="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
