@@ -43,7 +43,7 @@ public class AddActivity2 extends AppCompatActivity {
                 num1=Integer.parseInt(getNum1);
                 num2=Integer.parseInt(getNum2);
                         sum=num1+num2;
-                res=String.valueOf(sum);
+                res=String.valueOf(sum);git a
                 tv.setText(res);
                 Toast.makeText(getApplicationContext(),res, Toast.LENGTH_LONG).show();
 
